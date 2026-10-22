@@ -28,7 +28,7 @@ function playRound(compChoice, humanChoice) {
         console.log(`${compChoice} beats ${humanChoice}     You Loose!`)
         compScore++
     }
-    else{
+    else if (humanChoice === "rock" && compChoice === "scissors" || humanChoice === "paper" && compChoice === "rock" || humanChoice === "scissors" && compChoice === "paper"){
         console.log(`${humanChoice} beats ${compChoice}     You Won!`)
         humanScore++
     }
